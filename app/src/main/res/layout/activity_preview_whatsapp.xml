@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    tools:context=".PreviewWhatsAppActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💬 Vista previa del mensaje"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Puedes revisar o editar el mensaje antes de enviarlo al profesional de apoyo:"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etMensajePreview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="top"
+        android:padding="16dp"
+        android:textSize="15sp"
+        android:background="#D5F5E3"
+        android:textColor="@android:color/black"
+        android:textColorHint="#555555"
+        android:layout_marginBottom="24dp"
+        android:inputType="textMultiLine|textLongMessage"/>
+
+    <Button
+        android:id="@+id/btnEnviarWhatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar y Abrir WhatsApp"
+        android:padding="14dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 📳 Permiso requerido para la vibración en los ciclos de respiración -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CalmaFinal">
+
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RespiracionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MusicaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".homeActivity"
+            android:exported="false" />
+
+        <!-- Actividad nueva añadida para la vista previa de WhatsApp -->
+        <activity
+            android:name=".PreviewWhatsAppActivity"
+            android:exported="false" />
+
+        <!-- ✨ Paso 4: Actividad nueva añadida para la recuperación de contraseña -->
+        <activity
+            android:name=".RecuperarActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".loginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

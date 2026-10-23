@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    tools:context=".RespiracionActivity">
+
+    <TextView
+        android:id="@+id/tvContadorCiclos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciclo: 1/4"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#006064"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInstruccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Prepárate!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#006064"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContadorCiclos" />
+
+    <!-- Círculo de referencia visual corregido -->
+    <View
+        android:id="@+id/circleView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@drawable/circle_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <!-- 🔢 Contador Numérico Gigante y Llamativo centrado sobre el círculo -->
+    <TextView
+        android:id="@+id/tvContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        android:textColor="#006064"
+        app:layout_constraintBottom_toBottomOf="@+id/circleView"
+        app:layout_constraintEnd_toEndOf="@+id/circleView"
+        app:layout_constraintStart_toStartOf="@+id/circleView"
+        app:layout_constraintTop_toTopOf="@+id/circleView" />
+
+    <Button
+        android:id="@+id/btnIniciarCiclo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INICIAR CICLO"
+        android:textSize="18sp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleView" />
+
+    <TextView
+        android:id="@+id/tvBeneficiosInstrucciones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Estás ayudando a calmar tu sistema nervioso, reducir el estrés, la ansiedad y mejorar la concentración y el sueño. Siéntate con la espalda recta, coloca la punta de la lengua detrás de los dientes frontales superiores, y repite el ciclo hasta 4 veces."
+        android:textColor="#455A64"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSigueRitmo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSigueRitmo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sigue el ritmo del círculo"
+        android:textColor="#455A64"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

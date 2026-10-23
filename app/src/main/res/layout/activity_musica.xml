@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    tools:context=".MusicaActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_calma"  android:contentDescription="Imagen para Calma+"
+        android:layout_marginBottom="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡A disfrutar de la Calma+ ! 🧘‍♀️ Toca el botón para escuchar sonidos relajantes de Pixabay."
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/btn_ir_youtube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎧 Ir a Sonidos Relajantes (Pixabay)"
+        android:padding="15dp"/>
+
+</LinearLayout>
